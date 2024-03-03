@@ -10,6 +10,11 @@ function generateULID({ encode }: { encode: ENCODING }): {
   ulid: string | null;
 } {
   try {
+    // Default encode fallback : Crockford
+    if (!encode) {
+      encode = "Crockford";
+    }
+
     // Timestamp
     const timestamp = generateTimestamp();
 
@@ -59,7 +64,7 @@ function generateULID({ encode }: { encode: ENCODING }): {
     const randomBytesBuffer = Buffer.from(randomBytes);
     const randomByteLength = randomBytesBuffer.length;
     for (let i = 0; i < randomByteLength; i++) {
-      const byte = Math.abs(randomBytes.readInt8(i));
+      const byte = Math.abs(randomBytesBuffer.readInt8(i));
       encodedRandomBytes =
         encodedRandomBytes + encoder({ num: byte, base, encoding });
     }

@@ -3,10 +3,10 @@ import log from "./logger";
 
 function generate({ numberOfBytes }: { numberOfBytes: number }): {
   error: string | null;
-  data: Buffer | null;
+  data: string | null;
 } {
   try {
-    const buffer = randomBytes(numberOfBytes);
+    const buffer = randomBytes(numberOfBytes).toString("ascii");
     return { error: null, data: buffer };
   } catch (error) {
     log.error(error);
