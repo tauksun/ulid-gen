@@ -15,3 +15,5 @@ export const ulid = (options?: { encode: ENCODING; monotonic: Boolean }) => {
   }
   return ulid;
 };
+
+export type I_ENCODING = ENCODING;

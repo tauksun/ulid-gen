@@ -2,7 +2,8 @@
   "name": "ulid-gen",
   "version": "0.1.0",
   "description": "Generates ULID with \"Crockford base 32\" format, base32, base64 & in UUID format (for efficient storage in DB).",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "./node_modules/typescript/bin/tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +14,7 @@
   ],
   "author": "tauksun",
   "license": "ISC",
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/tauksun/ulid-gen.git"
   },
