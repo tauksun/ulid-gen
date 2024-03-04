@@ -1,7 +1,7 @@
 ## Install
 
 ```
-npm install ulid-gen
+npm install ulid-generator
 ```
 
 ### ULID
@@ -18,10 +18,10 @@ A ULID consists of 128 bits, Out of which 48 bits represent time and 80 bits are
 ### Usage
 
 ```javascript
-const { ulid } from "ulid-gen"
+const { ulid } from "ulid-generator"
 ``` 
 ```typescript
-import { ulid } from "ulid-gen"
+import { ulid } from "ulid-generator"
 ```
 
 ### Crockford Base32 format

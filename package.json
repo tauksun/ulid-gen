@@ -1,6 +1,6 @@
 {
-  "name": "ulid-gen",
-  "version": "0.1.0",
+  "name": "ulid-generator",
+  "version": "0.9.0",
   "description": "Generates ULID with \"Crockford base 32\" format, base32, base64 & in UUID format (for efficient storage in DB).",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
